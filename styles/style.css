@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#232526 ,#414345);
+}
+
+*{
+    box-sizing : border-box;
+    font-family:'Courgette', cursive ;
+}
+
+form fieldset input{
+    display: block;
+    padding : 10px 40px;
+    margin : 50px  50px;
+    border-radius :10px;
+    text-align: center;
+    caret-color: #9d5b3fbd;
+}
+
+form fieldset{
+    background: linear-gradient(#fc00ff ,#00dbde );
+    border-radius: 20px;
+}
+
+h4{
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 4px 4px 4px #00dbde ;
+}
+
+#themeIcon{
+    position: absolute;
+    right : 10px;
+    left : 40px;
+    top :30px;
+    font-size : 50px;
+    cursor : pointer;
+}
+
+.title{
+    position: absolute;
+    top : 50px;
+}
+
+.form-buttons{
+    display: flex;
+    justify-content:space-around;
+}
+
+.form-buttons .registerBtn{
+    background-color : #cc5333;
+    padding : 10px;
+    border-radius : 10px;
+    cursor : pointer ;
+    color : #eee;
+}
+
+.form-buttons .LoginBtn{
+    background-color : #02180b;
+    padding : 10px;
+    border-radius : 10px;
+    cursor : pointer;    
+    color : #eee;
+}
+
+
+

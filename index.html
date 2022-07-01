@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login Form</title>
+  </head>
+  <body>
+    <div id="themeIcon">
+      <i
+        @click="changeThemeHandler"
+        style="color: #eee"
+        class="fas fa-moon"
+      ></i>
+    </div>
+    <form id="Form">
+      <fieldset>
+        <h4 id="titleElem">{{titleValue}}</h4>
+        <input type="text" placeholder="Write Your userName" />
+        <input
+          v-if="EmailInputExist"
+          id="EmailInput"
+          type="email"
+          placeholder="Write Your Email"
+        />
+        <input type="password" placeholder="Write Your Password" />
+        <div class="form-buttons">
+          <button @click="LoginHandler" class="LoginBtn">Sign in</button>
+          <button @click="registerHandler" class="registerBtn">Sign up</button>
+        </div>
+      </fieldset>
+    </form>
+    <script src="./scripts/vue.js"></script>
+  </body>
+</html>
